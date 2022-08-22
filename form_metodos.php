@@ -25,9 +25,22 @@
     </head>
     <body>
         <div>
-            <h1>Usuário logado como: <?php echo $login;?></h1>
-            <a href="index.php">Ir para Home</a> | <a href="form_postar.php">Postar Artigo</a> | <a href="form_metodos.php">Postar Método de Proteção</a> | <a href="logout.php">Sair</a>
-            <img src="<?php echo "users/user$id/$foto";?>">
+            <h1>Formulário de Métodos de Proteção
+            </h1>
+            <form action="postar.php" method="POST" enctype="multipart/form-data">
+                <input type="text" name="titulo" placeholder="Digite o título da postagem">
+                <input type="file" name="foto">
+                <textarea name="conteudo" placeholder="Digite aqui o conteúdo..."></textarea>
+                <div>
+                    <input type="submit" value="Publicar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+
+            <div>
+                <a href="index.php">&larr; Home</a>
+                <a href="form_postar.php">Postar Artigo &rarr;</a>
+            </div>
         </div>
     </body>
 </html>
