@@ -10,7 +10,7 @@
     }
     
     if($senha_log == $senha && $nivel == 1){
-        echo "E-mail: $login";
+        
     }else {
         header('location:index.php');
     }
@@ -23,7 +23,8 @@
     </head>
     <body>
         <div>
-            <h1>Bem vido a tela de Administrador</h1>
+            <h1>Usuário logado como: <?php echo $login;?></h1>
+            <a href="form_postar.php">Criar uma postagem</a> | <a href="form_metodos.php">Alterar métodos de proteção</a> | <a href="logout.php">Sair</a>
         </div>
     </body>
 </html>
