@@ -65,7 +65,7 @@
         mysqli_query($link, "INSERT INTO tb_user (nome, email, senha, lembrete, foto, nivel, dt, hr) VALUES
         ('$nome', '$email', '$senha', '$lembrete', '$foto', 5, '$dt', '$hr');");
         echo "<p style='text-align:center; color:#333; padding:5px; '>Usuário cadastrado com sucesso!<br>";
-        echo "<a href='index.php' style='color:#59f'>Ir para home</a> | <a href='login.php' style='color:#59f'>Login</a>";
+        echo "<a href='index.php'>Ir para home</a> | <a href='login.php'>Login</a>";
         echo "</p>";
     } else{
         echo "<script>window.history.go(-1);</script>";

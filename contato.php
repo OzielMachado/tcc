@@ -24,7 +24,7 @@
 
                     <label>Conteúdo:</label>
                     <textarea name="conteudo" placeholder="Digite o conteúdo..."></textarea>
-                    <input type="submit" value="Enviar" class="bt_enviar">
+                    <input type="submit" value="Enviar">
 
                 </form>
             </div>
