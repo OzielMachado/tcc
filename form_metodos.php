@@ -28,9 +28,9 @@
             <h1>Criar Métodos de Proteção
             </h1>
             <form action="postar.php" method="POST" enctype="multipart/form-data">
-                <input type="text" name="titulo" placeholder="Digite o título da postagem">
-                <input type="file" name="foto">
-                <textarea name="conteudo" placeholder="Digite aqui o conteúdo..."></textarea>
+                <input type="text" name="titulo" placeholder="Digite o título da postagem" required>
+                <input type="file" name="foto" required>
+                <textarea name="conteudo" placeholder="Digite aqui o conteúdo..." required></textarea>
                 <div>
                     <input type="submit" value="Publicar">
                     <input type="reset" value="Limpar">
@@ -39,7 +39,7 @@
 
             <div>
                 <a href="index.php">&larr; Home</a>
-                <a href="form_postar.php">Postar Artigo &rarr;</a>
+                <a href="form_postar.php">Criar um Artigo &rarr;</a>
             </div>
         </div>
     </body>

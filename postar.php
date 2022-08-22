@@ -15,10 +15,15 @@
         $titulo = $_POST['titulo'];
         $foto = $_FILES['foto']['name'];
         $tipo = $_FILES['foto']['type'];
-
+        $conteudo = $_POST['conteudo'];
         include "substituicao.php";
-
         
+        $registro = false;
+        if(!empty($titulo) && !empty($foto) && !empty($conteudo)){
+            $registro = true;
+        } else {
+            echo "<script>window.history.go(-1);</script>";
+        }
     }else {
         header('location:index.php');
     }
