@@ -25,7 +25,7 @@
     </head>
     <body>
         <div>
-            <h1>Formulário de Artigos
+            <h1>Criação de Artigo
             </h1>
             <form action="postar.php" method="POST" enctype="multipart/form-data">
                 <input type="text" name="titulo" placeholder="Digite o título da postagem">
