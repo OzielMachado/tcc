@@ -24,6 +24,13 @@
         } else {
             echo "<script>window.history.go(-1);</script>";
         }
+
+        $sql = mysqli_query($link, "SELECT * FROM tb_postagens ORDER BY id_post DESC LIMIT 1");
+
+        while($line = mysqli_fetch_array($sql)){
+            $id = $line['id_post'];
+        }
+        
     }else {
         header('location:index.php');
     }
