@@ -1,5 +1,6 @@
 <?php
     include "connect.php";
+    date_default_timezone_set('America/Sao_Paulo');
     SESSION_START();
     $login = $_SESSION['login'];//email do usuário
     $senha_log = $_SESSION['password'];//password do usuário
@@ -11,9 +12,13 @@
     }
     
     if($senha_log == $senha && $nivel == 1){
-        
-        
+        $titulo = $_POST['titulo'];
+        $foto = $_FILES['foto']['name'];
+        $tipo = $_FILES['foto']['type'];
 
+        include "substituicao.php";
+
+        
     }else {
         header('location:index.php');
     }
