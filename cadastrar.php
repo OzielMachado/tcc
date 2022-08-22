@@ -35,12 +35,12 @@
 
     //Criando a pasta para o novo usuário se ela não existir
     $id = $id + 1;
-    $pasta = "users/user".$id;
-    if(file_exists($pasta)){
+    $pasta = "user".$id;
+    if(file_exists("users/".$pasta)){
         //echo "<script>alert('Essa pasta já existe');</script>";
         //rmdir($pasta);
     }else{
-        mkdir($pasta, 0777);
+        mkdir("users/".$pasta, 0777);
         //echo "<script>alert('A pasta ".$pasta." foi criada com sucesso!');</script>";
     }
 
@@ -51,7 +51,7 @@
     $formatos = array(1=>'image/png', 2=>'image/jpeg', 3=>'image/jpg', 4=>'image/gif');
     $teste = array_search($tipo, $formatos);
     if($teste){
-        move_uploaded_file($_FILES['foto']['tmp_name'], $pasta."/".$foto);
+        move_uploaded_file($_FILES['foto']['tmp_name'], "users/".$pasta."/".$foto);
     } else {
         echo "<script>alert('Imagem inválida');</script>";
     }
