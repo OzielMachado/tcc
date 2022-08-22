@@ -7,6 +7,8 @@
     while($line = mysqli_fetch_array($sql)){
         $senha = $line['senha'];
         $nivel = $line['nivel'];
+        $foto = $line['foto'];
+        $id = $line['id_user'];
     }
     
     if($senha_log == $senha && $nivel == 1){
@@ -24,7 +26,8 @@
     <body>
         <div>
             <h1>Usuário logado como: <?php echo $login;?></h1>
-            <a href="form_postar.php">Criar uma postagem</a> | <a href="form_metodos.php">Alterar métodos de proteção</a> | <a href="logout.php">Sair</a>
+            <a href="index.php">Ir para Home</a> | <a href="form_postar.php">Criar uma postagem</a> | <a href="form_metodos.php">Alterar métodos de proteção</a> | <a href="logout.php">Sair</a>
+            <img src="<?php echo "users/user$id/$foto";?>">
         </div>
     </body>
 </html>
