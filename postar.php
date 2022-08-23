@@ -25,12 +25,15 @@
             echo "<script>window.history.go(-1);</script>";
         }
 
-        $sql = mysqli_query($link, "SELECT * FROM tb_postagens ORDER BY id_post DESC LIMIT 1");
+        $sql = mysqli_query($link, "SELECT * FROM tb_artigo ORDER BY id_artigo DESC LIMIT 1");
 
         while($line = mysqli_fetch_array($sql)){
-            $id = $line['id_post'];
+            $id = $line['id_artigo'];
         }
-        
+
+        $pasta = "postagens/post".$id;
+        mkdir($pasta, 0777);
+
     }else {
         header('location:index.php');
     }
