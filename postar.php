@@ -32,7 +32,11 @@
         }
 
         $pasta = "postagens/post".$id;
-        mkdir($pasta, 0777);
+        if(file_exists($pasta)){
+
+        } else{
+            mkdir($pasta, 0777);
+        }
 
     }else {
         header('location:index.php');
