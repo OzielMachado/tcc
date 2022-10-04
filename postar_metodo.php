@@ -33,7 +33,7 @@
         
         if($registro) {
             @$id += 1;
-            $pasta = "postagens/post$id";
+            $pasta = "metodos/metodo$id";
             if(file_exists($pasta)){
                 // echo "Pasta $pasta já existe";
             } else{
@@ -41,10 +41,10 @@
             }
             $dt = date('Y-m-d');
             $hr = date('H:m:s');
-            $page = 1;
+            $page = 2;
             mysqli_query($link, "INSERT INTO tb_artigo (titulo, imagem, texto, dt, hr, `page`, id_user) VALUES ('$titulo', '$foto', '$conteudo', '$dt', '$hr', '$page', '$id_user')");
             move_uploaded_file($_FILES['foto']['tmp_name'], $pasta."/".$foto);
-            header('location:form_postar.php');
+            header('location:form_metodos.php');
         } else {
             echo "Não foi possível cadastrar esse conteúdo.";
             echo "<a href='form_postar.php'>Voltar ao Formulário</a>";

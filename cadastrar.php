@@ -5,7 +5,7 @@
     include "connect.php";
     date_default_timezone_set('America/Sao_Paulo');
 
-    //Pegando os valores do formulario e colocando em variáveis
+    //Pegando os valores do formulário e colocando em variáveis
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = md5($_POST['senha']);

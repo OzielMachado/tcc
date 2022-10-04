@@ -27,7 +27,7 @@
         <div>
             <h1>Criar Métodos de Proteção
             </h1>
-            <form action="postar.php" method="POST" enctype="multipart/form-data">
+            <form action="postar_metodo.php" method="POST" enctype="multipart/form-data">
                 <input type="text" name="titulo" placeholder="Digite o título da postagem" required>
                 <input type="file" name="foto" required>
                 <textarea name="conteudo" placeholder="Digite aqui o conteúdo..." required></textarea>
