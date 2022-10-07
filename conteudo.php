@@ -30,7 +30,7 @@
 
         $contar = mysqli_num_rows($sel_total); // Quantidade de registros da tabela
         $contar_pages = $contar / $qtd_registros;
-        echo $contar_pages;
+        // echo $contar_pages;
 
         while($line = mysqli_fetch_array($sel_parcial)) {
             $titulo = $line['titulo'];
