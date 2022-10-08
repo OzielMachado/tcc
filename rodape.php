@@ -1,1 +1,1 @@
-<p>&copy; Oziel e Felipe - 2022</p>
+<p class="text-center">&copy; Oziel e Felipe - 2022</p>

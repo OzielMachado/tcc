@@ -21,6 +21,7 @@
 <html>
     <head>
         <title>Antirransomware</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -42,5 +43,7 @@
                 <a href="form_metodos.php">Criar Método de Proteção &rarr;</a>
             </div>
         </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

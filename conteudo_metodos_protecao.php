@@ -14,7 +14,7 @@
     ?>
             <div>
                 <h1><?= $titulo ?></h1>
-                <img src="metodos/<?= "metodo$id_artigo/$imagem" ?>">
+                <img class="img-fluid img-thumbnail" src="metodos/<?= "metodo$id_artigo/$imagem" ?>">
                 <!-- postagens/post1/nome_imagem.extensão -->
                 <p><?= $conteudo ?></p>
                 <span><?php echo date('d/m/Y',strtotime($data)); echo "<br>".date('H:i',strtotime($hora)); ?></span>

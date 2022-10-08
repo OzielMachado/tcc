@@ -1,4 +1,4 @@
-    <img src="img/dark-logo.png">
+    <img class="img-fluid" src="img/dark-logo.png">
     <?php
         include "connect.php";
         SESSION_START();

@@ -1,11 +1,12 @@
 <html>
     <head>
         <title>Antirransomware</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        <div>
-            <h1>Tela de Login 
+    <body class="jumbotron">
+        <div class="container text-center">
+            <h1>Entrar 
                 <?php 
                     @$v = $_GET['valor'];
                     if($v){
@@ -13,12 +14,13 @@
                     }
                 ?>
             </h1>
-            <form action="logar.php" method="POST">
-                <input type="email" name="email" placeholder="E-mail">
-                <input type="password" name="senha" placeholder="Senha">
+            <img class="img-fluid" src="./img/light-logo.png">
+            <form action="logar.php" method="POST" >
+                <input type="email" name="email" placeholder="E-mail" class="form-control">
+                <input type="password" name="senha" placeholder="Senha" class="form-control">
                 <div>
-                    <input type="submit" value="Logar">
-                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Logar" class="btn btn-dark">
+                    <input type="reset" value="Limpar" class="btn btn-dark">
                 </div>
             </form>
 
@@ -28,5 +30,7 @@
                 <a href="form_cadastro.php">Cadastrar-se</a>
             </div>
         </div>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
